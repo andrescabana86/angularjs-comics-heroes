@@ -1,0 +1,77 @@
+@import 'src/colors.scss';
+
+.navbar {
+
+  &__container {
+    display: flex;
+    padding: 4px;
+    background-color: $black;
+  }
+
+  &__logo-container {
+    max-width: 80px;
+  }
+  
+  &__logo-img {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  &__menu-list {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 40px;
+  }
+
+  &__menu-list &__menu-item {
+    color: white;
+    margin: 8px 16px;
+    font-size: 1.25em;
+    cursor: pointer;
+    &:hover, &--active {
+      font-weight: bold;
+    }
+  }
+
+  &__menu-item--active-link {
+    font-weight: bold;
+  }
+
+  &__menu-list &__menu-link {
+    color: white;
+    text-decoration: none;
+  }
+
+  &__search-form {
+    display: flex;
+    align-items: center;
+  }
+
+  &__search-form &__search-input {
+    margin: 0px;
+    padding: 0px 8px;
+    border: 0px;
+    line-height: 2em;
+    font-size: 1.25em;
+    outline-color: transparent;
+    border-radius: 4px;
+  }
+
+  &__search-form &__search-btn {
+    margin: 0px 4px;
+    padding: 0px 16px;
+    line-height: 2em;
+    font-size: 1.25em;
+    border: 1px solid white;
+    background-color: transparent;
+    outline-color: transparent;
+    border-radius: 4px;
+    color: white;
+  }
+
+}

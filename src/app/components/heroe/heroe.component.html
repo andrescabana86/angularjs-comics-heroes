@@ -1,0 +1,23 @@
+<section class="heroe__container">
+  
+  <figure class="heroe__figure">
+    <img class="heroe__img" [src]="heroe.img" alt="Aquaman">
+  </figure>
+
+  <section class="heroe__data">
+    <article class="heroe__information">
+      <header class="heroe__title">
+        {{ heroe.nombre }}
+      </header>
+      <p class="heroe__description">
+        {{ heroe.bio }}
+      </p>
+    </article>
+  </section>
+
+  <footer class="heroe__footer">
+    <p class="heroe__appears"> {{ heroe.aparicion | date:'yyyy' }}</p>
+    <button class="heroe__link">go to see</button>
+  </footer>
+
+</section>
