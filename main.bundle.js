@@ -146,7 +146,7 @@ var APP_ROUTES = [
     { path: 'about', component: __WEBPACK_IMPORTED_MODULE_3__components_about_about_component__["a" /* AboutComponent */] },
     { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
-var APP_ROUTING = __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* RouterModule */].forRoot(APP_ROUTES);
+var APP_ROUTING = __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* RouterModule */].forRoot(APP_ROUTES, { useHash: true });
 
 
 /***/ }),
