@@ -1,0 +1,19 @@
+@media (min-width: 1200px) {
+  .home {
+    &__jumbotron {
+      background-color: lightgray;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      margin: 20px 20%;
+      padding: 24px;
+      position: relative;
+
+      &-image {
+        width: 396px;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+}
