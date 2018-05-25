@@ -1,13 +1,12 @@
 import { RouterModule, Routes } from '@angular/router'
 import { HomeComponent } from './components/home/home.component'
 import { HeroesComponent } from './components/heroes/heroes.component'
-import { HeroeDetailsComponent } from './components/heroe-details/heroe-details.component'
 import { AboutComponent } from './components/about/about.component'
 
 const APP_ROUTES:Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'heroes', component: HeroesComponent },
-  { path: 'heroes/:id', component: HeroeDetailsComponent },
+  { path: 'heroes/:heroe', component: HeroesComponent },
   { path: 'about', component: AboutComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ]

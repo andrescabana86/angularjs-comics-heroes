@@ -58,7 +58,13 @@ export class HeroesService {
 
   constructor() {}
 
-  getHeroes() {
+  getHeroes(heroe:string) {
+    if (heroe) {
+      const regex = new RegExp(heroe, 'ig')
+      return this.heroes.filter((heroe) => {
+        return regex.test(heroe.nombre)
+      })
+    }
     return this.heroes;
   }
 }

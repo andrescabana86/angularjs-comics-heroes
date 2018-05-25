@@ -17,7 +17,13 @@
   </ul>
   
   <form action="" class="navbar__search-form">
-    <input type="text" class="navbar__search-input">
+    
+    <input type="text"
+      name="search-input"
+      class="navbar__search-input"
+      [(ngModel)]="search"
+      (keyup)="buscarHeroe()">
+
     <button class="navbar__search-btn">Search</button>
   </form>
 

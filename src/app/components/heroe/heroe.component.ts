@@ -5,13 +5,9 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './heroe.component.html',
   styleUrls: ['./heroe.component.scss']
 })
-export class HeroeComponent implements OnInit {
+export class HeroeComponent {
   @Input()
   heroe:any
 
   constructor() {}
-
-  ngOnInit() {
-    console.log(this.heroe)
-  }
 }
