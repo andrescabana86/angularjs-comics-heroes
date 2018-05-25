@@ -17,7 +17,12 @@
 
   <footer class="heroe__footer">
     <p class="heroe__appears"> {{ heroe.aparicion | date:'yyyy' }}</p>
-    <button class="heroe__link">go to see</button>
+    <a class="heroe__link-wiki"
+      href="{{ heroe.wiki }}"
+    >More +</a>
+    <a class="heroe__link-photos"
+      href="{{ heroe.photos }}"
+    >Photos +</a>
   </footer>
 
 </section>
