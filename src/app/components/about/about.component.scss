@@ -1,0 +1,20 @@
+.about {
+  &__container {
+    background-color: lightgray;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 12px 8%;
+    padding: 24px;
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    &__container {
+      margin: 20px 20%;
+    }
+  }
+}
+
